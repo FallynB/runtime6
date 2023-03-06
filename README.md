@@ -237,7 +237,32 @@ then rerun the command above to generate a markdown table of runtimes.
 Copy/paste the table into the README file below this line.
 
 <!-- add the table here -->
-
+|                | `timsort`     | `merge_sorted`| `quick_sorted`|
+| -------------- | ------------- | ------------- | ------------- |
+ | `len(xs)=2**0` | `len(xs)=2**0` |     2.71e-06    |   1.74e-06    |   1.61e-06    |
+ | `len(xs)=2**1` | `len(xs)=2**1` |     1.84e-06    |   6.81e-06    |   8.14e-06    |
+ | `len(xs)=2**2` | `len(xs)=2**2` |     1.77e-06    |   1.20e-05    |   1.19e-05    |
+ | `len(xs)=2**3` | `len(xs)=2**3` |     1.81e-06    |   2.20e-05    |   2.06e-05    |
+ | `len(xs)=2**4` | `len(xs)=2**4` |     1.93e-06    |   4.28e-05    |   4.08e-05    |
+ | `len(xs)=2**5` | `len(xs)=2**5` |     2.28e-06    |   9.17e-05    |   8.53e-05    |
+ | `len(xs)=2**6` | `len(xs)=2**6` |     3.19e-06    |   1.98e-04    |   1.87e-04    |
+ | `len(xs)=2**7` | `len(xs)=2**7` |     4.35e-06    |   4.28e-04    |   4.32e-04    |
+ | `len(xs)=2**8` | `len(xs)=2**8` |     6.82e-06    |   9.17e-04    |   9.83e-04    |
+ | `len(xs)=2**9` | `len(xs)=2**9` |     1.26e-05    |   2.01e-03    |   2.10e-03    |
+ | `len(xs)=2**10` | `len(xs)=2**10` |     2.22e-05    |   4.30e-03    |   4.69e-03    |
+ | `len(xs)=2**11` | `len(xs)=2**11` |     4.71e-05    |   9.35e-03    |   1.01e-02    |
+ | `len(xs)=2**12` | `len(xs)=2**12` |     9.73e-05    |   1.99e-02    |   2.22e-02    |
+ | `len(xs)=2**13` | `len(xs)=2**13` |     2.05e-04    |   4.22e-02    |   4.90e-02    |
+ | `len(xs)=2**14` | `len(xs)=2**14` |     4.05e-04    |   9.06e-02    |   1.02e-01    |
+ | `len(xs)=2**15` | `len(xs)=2**15` |     8.28e-04    |   1.25e-01    |   1.42e-01    |
+ | `len(xs)=2**16` | `len(xs)=2**16` |     1.23e-03    |   2.62e-01    |   3.06e-01    |
+ | `len(xs)=2**17` | `len(xs)=2**17` |     2.05e-03    |   5.36e-01    |   6.48e-01    |
+ | `len(xs)=2**18` | `len(xs)=2**18` |     4.85e-03    |   1.15e+00    |   1.38e+00    |
+ | `len(xs)=2**19` | `len(xs)=2**19` |     1.05e-02    |   2.39e+00    |   2.88e+00    |
+ | `len(xs)=2**20` | `len(xs)=2**20` |     2.18e-02    |   4.97e+00    |   6.21e+00    |
+ | `len(xs)=2**21` | `len(xs)=2**21` |     4.46e-02    |   1.06e+01    |   1.31e+01    |
+ | `len(xs)=2**22` | `len(xs)=2**22` |     9.33e-02    |   2.18e+01    |   2.75e+01    |
+ | `len(xs)=2**23` | `len(xs)=2**23` |     1.87e-01    |   4.60e+01    |   5.73e+01    |
 You should notice that the built-in `sorted` function ran much faster on this input,
 but your `merge_sorted` and `quick_sorted` functions have essentially the same runtimes.
 This is because TimSort is designed to not have to resort already sorted data,

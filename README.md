@@ -237,6 +237,7 @@ then rerun the command above to generate a markdown table of runtimes.
 Copy/paste the table into the README file below this line.
 
 <!-- add the table here -->
+
 |                | `timsort`     | `merge_sorted`| `quick_sorted`|
 | -------------- | ------------- | ------------- | ------------- |
  | `len(xs)=2**0` | `len(xs)=2**0` |     2.71e-06    |   1.74e-06    |   1.61e-06    |
@@ -263,6 +264,7 @@ Copy/paste the table into the README file below this line.
  | `len(xs)=2**21` | `len(xs)=2**21` |     4.46e-02    |   1.06e+01    |   1.31e+01    |
  | `len(xs)=2**22` | `len(xs)=2**22` |     9.33e-02    |   2.18e+01    |   2.75e+01    |
  | `len(xs)=2**23` | `len(xs)=2**23` |     1.87e-01    |   4.60e+01    |   5.73e+01    |
+
 You should notice that the built-in `sorted` function ran much faster on this input,
 but your `merge_sorted` and `quick_sorted` functions have essentially the same runtimes.
 This is because TimSort is designed to not have to resort already sorted data,

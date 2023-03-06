@@ -120,6 +120,30 @@ $ python3 runtimes.py --max_x=22
 and copy/paste the resulting table into this README file below this line.
 
 <!-- add the table here -->
+|                | `timsort`     | `merge_sorted`| `quick_sorted`|
+| -------------- | ------------- | ------------- | ------------- |
+ | `len(xs)=2**0` | `len(xs)=2**0` |     3.05e-06    |   2.04e-06    |   1.57e-06    |
+ | `len(xs)=2**1` | `len(xs)=2**1` |     2.03e-06    |   6.86e-06    |   7.94e-06    |
+ | `len(xs)=2**2` | `len(xs)=2**2` |     1.76e-06    |   1.12e-05    |   1.19e-05    |
+ | `len(xs)=2**3` | `len(xs)=2**3` |     2.45e-06    |   2.26e-05    |   2.41e-05    |
+ | `len(xs)=2**4` | `len(xs)=2**4` |     3.67e-06    |   4.75e-05    |   4.98e-05    |
+ | `len(xs)=2**5` | `len(xs)=2**5` |     5.57e-06    |   1.01e-04    |   1.11e-04    |
+ | `len(xs)=2**6` | `len(xs)=2**6` |     1.10e-05    |   2.27e-04    |   2.71e-04    |
+ | `len(xs)=2**7` | `len(xs)=2**7` |     2.07e-05    |   4.93e-04    |   5.96e-04    |
+ | `len(xs)=2**8` | `len(xs)=2**8` |     4.50e-05    |   1.10e-03    |   1.42e-03    |
+ | `len(xs)=2**9` | `len(xs)=2**9` |     9.99e-05    |   2.43e-03    |   3.05e-03    |
+ | `len(xs)=2**10` | `len(xs)=2**10` |     2.20e-04    |   5.28e-03    |   7.08e-03    |
+ | `len(xs)=2**11` | `len(xs)=2**11` |     4.80e-04    |   1.15e-02    |   1.45e-02    |
+ | `len(xs)=2**12` | `len(xs)=2**12` |     1.05e-03    |   2.49e-02    |   3.10e-02    |
+ | `len(xs)=2**13` | `len(xs)=2**13` |     2.29e-03    |   5.37e-02    |   6.23e-02    |
+ | `len(xs)=2**14` | `len(xs)=2**14` |     2.95e-03    |   6.88e-02    |   9.01e-02    |
+ | `len(xs)=2**15` | `len(xs)=2**15` |     6.11e-03    |   1.35e-01    |   1.74e-01    |
+ | `len(xs)=2**16` | `len(xs)=2**16` |     1.54e-02    |   2.93e-01    |   3.99e-01    |
+ | `len(xs)=2**17` | `len(xs)=2**17` |     2.95e-02    |   6.43e-01    |   7.94e-01    |
+ | `len(xs)=2**18` | `len(xs)=2**18` |     6.29e-02    |   1.38e+00    |   1.73e+00    |
+ | `len(xs)=2**19` | `len(xs)=2**19` |     2.61e-01    |   3.53e+00    |   4.24e+00    |
+ | `len(xs)=2**20` | `len(xs)=2**20` |     4.09e-01    |   7.10e+00    |   9.47e+00    |
+ | `len(xs)=2**21` | `len(xs)=2**21` |     9.43e-01    |   1.51e+01    |   2.08e+01    |
 
 You should observe that python's built-in sort function is 10-100x faster than yours.
 All functions have the same wort-case asymptotic complexity (i.e. $\Theta(n \log n)$),
